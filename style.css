@@ -47,4 +47,38 @@ h1 {
 body {
   background-color: #f3efef;
 }
+
+h1 {
+  font-size: 50px;
+  color: olive;
+  background-color: black;
+}
+
+p {
+  font-size: 30px;
+  color: olive;
+  background-color: black;
+}
+
+.btn1 {
+  background-color: #ee55ee;
+  color: #f5f1f5;
+  font-size: 35px;
+}
+
+.btn2, .btn {
+  background-color: #5557ee;
+  color: #f5f1f5;
+  font-size: 35px;
+}
+
+.btn3 {
+  background-color: #2be2e9;
+  color: #f5f1f5;
+  font-size: 35px;
+}
+
+.btn {
+  border: 1px solid black;
+}
 /*# sourceMappingURL=style.css.map */

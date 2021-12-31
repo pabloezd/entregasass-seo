@@ -3,3 +3,53 @@
 body{
     background-color: rgb(243, 239, 239);
 }
+
+@mixin estilofuente{
+    color: olive;
+    background-color: black;
+}
+
+h1{
+    font-size: 50px;
+    @include estilofuente();
+}
+
+p{
+    font-size: 30px;
+    @include estilofuente();
+
+}
+
+$redes:(
+    color: #f5f1f5,
+    fuente: 35px,
+    instagram: #ee55ee,
+    facebook: #5557ee,
+    twitter: #2be2e9,
+);
+
+.btn1{
+    background-color: map-get($redes, instagram);
+    color: map-get($redes, color);
+    font-size: map-get($redes, fuente);
+}
+
+.btn2{
+    background-color: map-get($redes, facebook);
+    color: map-get($redes, color);
+    font-size: map-get($redes, fuente);
+}
+
+.btn3{
+    background-color: map-get($redes, twitter);
+    color: map-get($redes, color);
+    font-size: map-get($redes, fuente);
+}
+
+
+.btn{
+    @extend .btn2;
+    border: 1px solid black
+}
+
+
